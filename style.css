@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+    transition: background 0.3s ease;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 15px;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+button {
+    padding: 20px 40px;
+    font-size: 1.5em;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+    background-color: #2575fc;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background-color: #1d63d5;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:disabled {
+    background-color: #d3d3d3;
+    cursor: not-allowed;
+}
+
+#tempo, #contador {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #f7d29d;
+    margin: 15px 0;
+}
+
+#reiniciar {
+    padding: 15px 30px;
+    background-color: #ff6f61;
+    border-radius: 8px;
+    color: white;
+    font-size: 1.5em;
+    margin-top: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: none; 
+}
+
+#reiniciar:hover {
+    background-color: #e55e4f;
+}
+
+footer {
+    position: fixed;
+    bottom: 20px;
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    section {
+        width: 90%;
+        padding: 20px;
+    }
+    header h1 {
+        font-size: 2.5em;
+    }
+    button {
+        font-size: 1.2em;
+        padding: 15px 30px;
+    }
+    #reiniciar {
+        font-size: 1.2em;
+        padding: 12px 25px;
+    }
+}

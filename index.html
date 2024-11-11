@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Clique</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Jogo de Clique</h1>
+    </header>
+    <section>
+        <p>Clique no botão o maior número de vezes em 10 segundos!</p>
+        <button id="botao" onclick="clicar()">Clique aqui!</button>
+        <p>Tempo restante: <span id="tempo">10</span> segundos</p>
+        <p>Você clicou <span id="contador">0</span> vezes.</p>
+        <button id="reiniciar" onclick="reiniciar()" style="display: none;">Reiniciar</button>
+    </section>
+    <footer>
+        <p>Boa sorte! (Feito por João Moisés)
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
